@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:iconTint="@color/white"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_complain"
+        android:icon="@drawable/complain_icon_white"
+        android:iconTint="@color/white"
+        android:title="complain" />
+
+    <item
+        android:id="@+id/navigation_meeting"
+        android:icon="@drawable/meeting_white"
+        android:iconTint="@color/white"
+        android:title="meeting" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/baseline_settings_24"
+        android:iconTint="@color/white"
+        android:title="setting" />
+
+</menu>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@color/white"
+    android:id="@+id/complain_root_ll"
+    tools:context=".complain.ComplainRaiseActivity">
+
+    <LinearLayout
+        android:id="@+id/complain_image_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_weight="3.2"
+        android:background="@drawable/btn_outline"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/complain_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20sdp"
+            android:background="@drawable/camera_plaseholder_24"
+            android:scaleType="fitXY"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/complain_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/complain_select_spinner_btn"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/btn_outline"
+                android:gravity="center"
+                android:hint="Select Your Issue"
+                android:padding="10dp"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:textColor="@color/primary_color"
+                android:textColorHint="@color/primary_color"
+                android:textSize="14.5sp"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="8dp"
+                app:spinner_divider_color="@color/primary_color"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_array="@array/complain_of_type"
+                app:spinner_item_height="46dp"
+                app:spinner_popup_animation="dropdown"
+                app:spinner_popup_background="@color/white"
+                app:spinner_popup_elevation="14dp" />
+
+            <ImageButton
+                android:id="@+id/complain_select_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/baseline_arrow_drop_down_24" />
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/complain_history_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/history_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textColor="@color/primary_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextComplainTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Complain title"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextIssueDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start"
+            android:hint="Complain  Description"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:padding="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_complain_btn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_weight="0.6"
+        android:backgroundTint="@color/primary_color"
+        android:text="Submit "
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="italic|bold"
+        android:visibility="visible" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/primary_color"
+        app:SpinKit_Style="FadingCircle" />
+
+</LinearLayout>

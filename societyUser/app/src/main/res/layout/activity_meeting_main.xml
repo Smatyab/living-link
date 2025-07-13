@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".meeting.MeetingMain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meeting"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="90dp"/>
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white"
+        android:paddingTop="@dimen/_50sdp"
+        android:paddingBottom="@dimen/_40sdp"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp"
+        >
+        <EditText
+            android:id="@+id/meeting_id_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Meeting Id"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textSize="18sp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/meeting_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Your Name"
+            android:maxLength="10"
+            android:textSize="18sp"
+            android:padding="@dimen/_10sdp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/join_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Join a meeting"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/primary_color"
+            android:textSize="16sp"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints List</title>
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="../navbar.css" rel="stylesheet">
+  <style>
+    .container-fluide {
+      margin: 12vh 2vh 2vh 2vh;
+    }
+
+    h2 {
+      display: inline-block;
+      width: 90%;
+      text-align: center;
+    }
+
+    .headel {
+      display: block;
+      width: 100%;
+    }
+
+
+    /* Table Styling */
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 4px solid #ddd;
+      margin-top: 2%;
+    }
+
+    th,
+    td {
+      padding: 0.75rem 1rem;
+      border: 2px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f5f5f5;
+      font-weight: bold;
+    }
+
+    .action {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .action a {
+      color: #3b7ddd;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .action a:hover {
+      color: #0e2238;
+    }
+
+    .btn-danger,
+    .btn-secondary {
+      display: block;
+      width: 100%;
+      margin: 3% auto;
+    }
+
+    .tohhle {
+      width: 100%;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <button class="btn btn-primary addSecretary">Add Complaints</button> -->
+  <div class="wrapper">
+    <aside id="sidebar">
+      <div class="d-flex">
+        <button class="toggle-btn" type="button">
+          <i class="lni lni-grid-alt"></i>
+        </button>
+        <div class="sidebar-logo">
+          <a href="../home.html">Dashborad</a>
+        </div>
+      </div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-item">
+            <a href="./complaints.html" class="sidebar-link">
+                <i class="lni lni-license"></i>
+                <span>Complaints</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./meeting.html" class="sidebar-link">
+                <i class="lni lni-zoom"></i>
+                <span>Schedule Meeting</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./events.html" class="sidebar-link">
+                <i class="lni lni-handshake"></i>
+                <span>Events</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./banner.html" class="sidebar-link">
+                <i class="lni lni-flag"></i>
+                <span>Banners</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./secretary.html" class="sidebar-link">
+                <i class="lni lni-consulting"></i>
+                <span>Societies</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./members.html" class="sidebar-link">
+                <i class="lni lni-users"></i>
+                <span>Members</span>
+            </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a href="./maintanance.html" class="sidebar-link">
+            <i class="lni lni-rupee"></i>
+            <span>Maintenance</span>
+          </a>
+        </li>
+
+        <li class="sidebar-item">
+          <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="sidebar-link">
+            <i class="lni lni-inbox"></i>
+            <span>Inbox</span>
+          </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./notes.html" class="sidebar-link">
+                <i class="lni lni-notepad"></i>
+                <span>Notes</span>
+            </a>
+        </li>
+    
+        <li class="sidebar-item">
+            <a href="./settings.html" class="sidebar-link">
+                <i class="lni lni-cog"></i>
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+      <div class="sidebar-footer">
+        <a class="sidebar-link logout">
+          <i class="lni lni-exit"></i>
+          <span>Logout</span>
+        </a>
+      </div>
+    </aside>
+    <div class="main">
+      <div class="text-center">
+        <h1>
+          Living Link
+        </h1>
+        <img src="../1.png">
+      </div>
+      <div class="container-fluide">
+        <a href="/admin/home.html">
+          <i class="lni lni-arrow-left-circle"></i>
+        </a>
+        <h2>Complaints List</h2>
+        <hr>
+        <div class="filter">
+          <div class="container">
+            <div class="row">
+              <div class="col-8">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
+                    aria-describedby="searchButton">
+                  <div class="input-group-append">
+                    <button class="btn btn-dark" type="button" id="searchButton">Search</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 ml-5">
+                <button type="button" class="btn btn-dark toggle">Show Completed Complaints</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Society Name</th>
+              <th>Comlaint Type</th>
+              <th>Date & Time</th>
+              <th>Address</th>
+              <!-- <th>Member Name</th>
+              <th>Secretary Name</th> -->
+              <!-- <th>Society Name</th> -->
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="complaintTableBody">
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="../src/loginCheck.js" type="module"></script>
+  <script src="../src/FireBaseConfig.js" type="module"></script>
+  <script src="./complaintJS.js" type="module"></script>
+</body>
+
+</html>

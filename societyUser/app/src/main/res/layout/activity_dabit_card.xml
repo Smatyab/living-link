@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_outline"
+        android:layout_margin="@dimen/_20sdp"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card Number"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            android:background="@drawable/debitcard_textview_border" />
+
+        <EditText
+
+            android:id="@+id/card_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/editText_bg"
+            android:inputType="number"
+            android:textSize="@dimen/_26sdp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:hint="56xx 99xx 65xx"
+            android:background="@drawable/debitcard_edittext_border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date "
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_color"
+                    android:background="@drawable/debitcard_textview_border" />
+
+                <EditText
+                    android:id="@+id/expiry_date_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="MM/YY"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/editText_bg"
+                    android:textSize="@dimen/_26sdp"
+                    android:textColor="@color/white"
+                    android:inputType="date"
+                    android:background="@drawable/debitcard_edittext_border" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary_color"
+                    android:background="@drawable/debitcard_textview_border" />
+
+                <EditText
+                    android:id="@+id/cvv_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_26sdp"
+                    android:textColorHint="@color/editText_bg"
+                    android:hint="xxx"
+
+                    android:maxLength="3"
+                    android:textColor="@color/white"
+                    android:background="@drawable/debitcard_edittext_border" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_money_wallet_debitCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:backgroundTint="@color/primary_color"
+        android:text="Pay   ->>"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18sdp" />
+
+</LinearLayout>

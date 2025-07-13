@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="login-container">
+    <form action="#" method="get" class="login">
+      <h1>LIVING LINK</h1>
+      <h2>Admin Login</h2>
+      <label for="Email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      <input type="checkbox" id="rm" name="remember me">
+      <label for="rm" id="lblrm">Remember Me</label>
+      <button type="submit">Login</button>
+
+    </form>
+  </div>
+
+  <!-- import and configration -->
+  <script src="./src/FireBaseConfig.js" type="module"></script>
+  <script src="validate.js" type="module"></script>
+
+</body>
+
+</html>

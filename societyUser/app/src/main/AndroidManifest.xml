@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_black_primary"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_black_primary"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SocietyUser"
+        tools:targetApi="31">
+        <activity
+            android:name=".animation_transaction_succes"
+            android:exported="false" />
+        <activity
+            android:name=".addMoneyAnimation"
+            android:exported="false" />
+        <activity
+            android:name=".Complain_success"
+            android:exported="false" />
+        <activity
+            android:name=".webView_info2"
+            android:exported="false" />
+        <activity
+            android:name=".webView_info"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ConversationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login_mock"
+            android:exported="false" />
+        <activity
+            android:name=".chat.ChatMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.EventActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation_after_login"
+            android:exported="false" />
+        <activity
+            android:name=".animation_after_sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".note.NotesMainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="MyLibraryName" />
+        </activity>
+        <activity
+            android:name=".setting.updateUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".setting.UserProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".fragment.BottomActivity"
+            android:theme="@style/Theme.SocietyUser.title" />
+        <activity
+            android:name=".setting.informationAcctivity"
+            android:exported="false"
+            android:parentActivityName=".fragment.BottomActivity"
+            android:theme="@style/Theme.SocietyUser.title" />
+        <activity
+            android:name=".setting.cutomer_care"
+            android:exported="false"
+            android:parentActivityName=".fragment.BottomActivity"
+            android:theme="@style/Theme.SocietyUser.title" />
+        <activity
+            android:name=".setting.ChangePasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".fragment.BottomActivity"
+            android:theme="@style/Theme.SocietyUser.title" />
+        <activity
+            android:name=".welcome.MoreCategotyActivity"
+            android:exported="true"
+            android:parentActivityName=".fragment.BottomActivity"
+            android:theme="@style/AppTheme_title" />
+        <activity
+            android:name=".welcome.SettingActivity"
+            android:exported="false"
+            android:parentActivityName=".fragment.BottomActivity" />
+        <activity
+            android:name=".complain.ComplainRaiseHistory"
+            android:exported="false" />
+        <activity
+            android:name=".meeting.MeetingConsforanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".meeting.MeetingMain"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.HomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.SocietyUser" />
+        <activity
+            android:name=".fragment.BottomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".complain.ComplainRaiseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wallet.DabitCardActivity"
+            android:exported="false"
+            android:parentActivityName=".wallet.WalletActivity"
+            android:theme="@style/Theme.SocietyUser.title" />
+        <activity
+            android:name=".wallet.PayAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".easyWork.EaseWorkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".wallet.WalletActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.RegistrationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".welcome.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.WelcomeSignUpLogin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".wallet.TransactionHistory"
+            android:exported="false" />
+        <activity
+            android:name=".welcome.SplashActivity"
+            android:exported="true"
+            android:label="@string/title_activity_splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.SocietyUser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".test.MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

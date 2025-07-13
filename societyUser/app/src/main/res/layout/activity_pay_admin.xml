@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="8"
+    tools:context=".wallet.PayAdmin">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/primary_color"
+        android:fontFamily="@font/magra_bold"
+        android:padding="@dimen/_2ssp"
+        android:text="Transaction Send To Secreatory"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_lottieAnimationView_welcome"
+        android:layout_width="412dp"
+        android:layout_height="0dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="3.5"
+        app:lottie_rawRes="@raw/pay_activity_lottie" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="3.5">
+
+
+        <EditText
+            android:id="@+id/pay_admin_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/edit_text_background"
+            android:drawableStart="@drawable/plain_dollar"
+            android:hint="Enter Amount"
+            android:inputType="number"
+            android:padding="@dimen/_12sdp"
+            tools:ignore="HardcodedText"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/pay_admin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@color/primary_color"
+            android:padding="@dimen/_10sdp"
+            android:text="Pay  -->"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/policy_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/big_shoulders_inline_display_light"
+            android:gravity="end"
+            android:text="payment Policy"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:textColor="@color/policy"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

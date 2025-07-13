@@ -1,0 +1,142 @@
+.slide-header {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+
+.wrapper-slide {
+  margin-top: 13vh;
+}
+
+
+.card {
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  height: 100%;
+  /* background-color:rgb(197, 197, 197); */
+  background-color: #fafbff;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 3px solid #bebebe;
+}
+
+
+/* Adjusting width of slides */
+#slide1,
+#slide2 {
+  width: 33%;
+  /* Adjust width as needed */
+  margin: 0 ;
+  /* Center align the slides */
+}
+
+/* Slide hover effect */
+#slide1:hover,
+#slide2:hover {
+  transform: scale(1.05);
+  /* Scale the slide by 5% on hover */
+  transition: transform 0.3s ease;
+  /* Add transition effect for smooth hover */
+}
+
+.card-title:hover {
+  color: #007bff;
+}
+
+
+.card-subtitle:hover {
+  color: #6c757d;
+}
+
+.count{
+  color:#007bff;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.card-body .card-title {
+  color:#007bff;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.arrow-link {
+  display: block;
+  font-size: 3vh;
+  margin-top: 0.4vh;
+}
+
+.float-end {
+  float: right;
+}
+
+
+/* chart */
+.chart-container {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  max-width: 100%;
+  /* min-height: 10vh; */
+}
+
+
+.calendar-table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  table-layout: fixed; /* Ensure all columns have same width */
+}
+
+.calendar-table th,
+.calendar-table td {
+  text-align: center;
+  padding: 0.1vw; /* Adjust padding as needed */
+  border-radius: 10px;
+}
+
+.calendar-table th {
+  border-bottom: 3px solid #bebebe;
+}
+
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+  z-index: 9998; /* Ensure it's below the spinner */
+  display: none; /* Initially hidden */
+}
+
+.spinner-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  /* Add other styles for your spinner container */
+}
+
+.count_amount_society, .count_amount_member, .count_amount_admin{
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  color: #007bff;
+}

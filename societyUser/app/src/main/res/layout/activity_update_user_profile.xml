@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:id="@+id/update_user_profile_root"
+    tools:context=".setting.UserProfileActivity">
+    <ScrollView
+        android:id="@+id/update_user_profile_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:backgroundTint="@color/primary_color"
+                    app:cardCornerRadius="@dimen/_100sdp">
+
+                    <ImageButton
+                        android:id="@+id/update_profile_image_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="user image"
+                        android:scaleType="centerCrop"
+                        tools:ignore="HardcodedText"
+                        android:src="@drawable/placeholder_image_failed"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_40sdp">
+
+                <EditText
+                    android:id="@+id/update_profile_userName_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="UserName"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+
+                <EditText
+                    android:id="@+id/update_profile_houseNo_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="House No"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+                <Button
+                    android:id="@+id/update_firebase_profile_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/primary_color"
+                    android:text="UPDATE"
+                    android:layout_margin="@dimen/_20sdp"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/primary_color"
+        app:SpinKit_Style="FadingCircle" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Society List</title>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../navbar.css" rel="stylesheet">
+    <style>
+        .d-inline-flex {
+            width: 100%;
+        }
+
+        .btn-outline-primary {
+            width: 100%;
+            display: block;
+            color: #0e2238;
+            border: 2px solid #0e2238;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #0e2238;
+            color: #fff;
+            border: 2px solid #0e2238;
+        }
+
+        .action a:hover {
+            color: #0e2238;
+        }
+
+        .accordion-btn {
+            width: 80%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            text-align: left;
+            outline: none;
+            transition: background-color 0.3s;
+            text-align: center;
+        }
+
+        .accordion-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .container-fluide {
+            margin: 12vh 2vh 2vh 2vh;
+        }
+
+        h2 {
+            display: inline-block;
+            width: 90%;
+            text-align: center;
+        }
+
+        .headel {
+            display: block;
+            width: 100%;
+        }
+
+        #forgetPasswordBtn{
+            margin-top: 2vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button class="btn btn-primary addSecretary">Add Secretary</button> -->
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <button class="toggle-btn" type="button">
+                    <i class="lni lni-grid-alt"></i>
+                </button>
+                <div class="sidebar-logo">
+                    <a href="../home.html">Dashborad</a>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="./complaints.html" class="sidebar-link">
+                        <i class="lni lni-license"></i>
+                        <span>Complaints</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./meeting.html" class="sidebar-link">
+                        <i class="lni lni-zoom"></i>
+                        <span>Schedule Meeting</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./events.html" class="sidebar-link">
+                        <i class="lni lni-handshake"></i>
+                        <span>Events</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./banner.html" class="sidebar-link">
+                        <i class="lni lni-flag"></i>
+                        <span>Banners</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./secretary.html" class="sidebar-link">
+                        <i class="lni lni-consulting"></i>
+                        <span>Societies</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./members.html" class="sidebar-link">
+                        <i class="lni lni-users"></i>
+                        <span>Members</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./maintanance.html" class="sidebar-link">
+                        <i class="lni lni-rupee"></i>
+                        <span>Maintenance</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="https://mail.google.com/mail/u/1/#inbox" target="_blank" class="sidebar-link">
+                        <i class="lni lni-inbox"></i>
+                        <span>Inbox</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./notes.html" class="sidebar-link">
+                        <i class="lni lni-notepad"></i>
+                        <span>Notes</span>
+                    </a>
+                </li>
+
+                <li class="sidebar-item">
+                    <a href="./settings.html" class="sidebar-link">
+                        <i class="lni lni-cog"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a class="sidebar-link logout">
+                    <i class="lni lni-exit"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+        <div class="main">
+            <div class="text-center">
+                <h1>
+                    Living Link
+                </h1>
+                <img src="../1.png">
+            </div>
+            <div class="container-fluide">
+                <a href="/admin/home.html">
+                    <i class="lni lni-arrow-left-circle"></i>
+                </a>
+                <h2>Settings</h2>
+                <hr>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#termsAndCondition" aria-expanded="false" aria-controls="termsAndCondition">
+                            Terms & Condition
+                        </button>
+                    </p>
+                    <div class="collapse mb-3" id="termsAndCondition">
+                        <div class="card card-body">
+                            <b>T & C</b>
+                            the Society Management System provided by Living Link, you agree to abide by the following
+                            terms
+                            and conditions. You are required to create an account to access certain features of the
+                            system,
+                            and you are responsible for maintaining the confidentiality of your account credentials. The
+                            system is intended for managing society-related tasks such as member management and event
+                            coordination, and you agree not to use it for any unlawful purposes. You retain ownership of
+                            any
+                            content you upload or share on the platform, but by submitting content, you grant Living
+                            Link a
+                            non-exclusive license to use it for operating the platform. We respect your privacy and
+                            handle
+                            your personal information in accordance with our Privacy Policy. Living Link reserves the
+                            right
+                            to modify these terms and conditions at any time, and your continued use of the system
+                            constitutes acceptance of any changes. We may suspend or terminate your access to the system
+                            if
+                            you violate these terms or engage in activities that may harm the platform or its users.
+                            These
+                            terms and conditions are governed by the laws of Living Link.
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#aboutUs" aria-expanded="false" aria-controls="aboutUs">
+                            About us
+                        </button>
+                    </p>
+                    <div class="collapse mb-3" id="aboutUs">
+                        <div class="card card-body">
+                            <b>About Us</b>
+                            Welcome to Living Link, a cutting-edge Society Management System designed to streamline the
+                            complexities of modern living communities. At the heart of our innovation lies a trio of
+                            visionaries: Akshit Donda,Daksh Roy and Parth Lathiya. United by a shared passion for
+                            technology and a vision to revolutionize residential living, our founders embarked on this
+                            journey to simplify the operations of housing societies, making them more efficient,
+                            transparent, and user-friendly.
+                            <hr>
+                            <b>Our Mission</b>
+
+                            Our mission is to empower housing societies with a seamless and intuitive platform that
+                            facilitates efficient management, fosters community engagement, and enhances the overall
+                            living
+                            experience for every resident. We believe in leveraging technology to solve real-world
+                            problems,
+                            bridging gaps between society management committees and residents through effective
+                            communication, transparent transactions, and streamlined processes.
+                            <hr>
+                            <b>Our Founders</b>
+                            <p>Akshit Donda : <i class="lni lni-envelope"></i> akshitdonda117@gmail.com</p>
+                            <p>Daksh Roy : <i class="lni lni-envelope"></i> dakshroy787@gmail.com</p>
+                            <p>Parth Lathiya : <i class="lni lni-envelope"></i> lathiyaparth2004@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#contactUs" aria-expanded="false" aria-controls="contactUs">
+                            Contact Us
+                        </button>
+                    </p>
+                    <div class="collapse mb-3" id="contactUs">
+                        <div class="card card-body">
+                            <b>Contact Us</b>
+                            <p>Akshit Donda : <i class="lni lni-envelope"></i> akshitdonda117@gmail.com | <i
+                                    class="lni lni-phone"></i> 7862902726</p>
+                            <p>Daksh Roy : <i class="lni lni-envelope"></i> dakshroy787@gmail.com | <i
+                                    class="lni lni-phone"></i> 9429547707</p>
+                            <p>Parth Lathiya : <i class="lni lni-envelope"></i> lathiyaparth2004@gmail.com | <i
+                                    class="lni lni-phone"></i> 9825876097</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#fp" aria-expanded="false" aria-controls="fp">
+                            Forget Password
+                        </button>
+                    </p>
+                    <div class="collapse mb-3" id="fp">
+                        <div class="card card-body">
+                            <b>Change Password</b>
+                            The link for forgetting the password is sent on livinglink01@gmail.com
+                            <button type="button" class="btn btn-secondary" id="forgetPasswordBtn">Send Link</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="../src/loginCheck.js" type="module"></script>
+    <script src="../src/FireBaseConfig.js" type="module"></script>
+    <script src="./setting.js" type="module"></script>
+</body>
+
+</html>
