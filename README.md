@@ -14,10 +14,10 @@
 
 ---
 
-## 👩‍💻 Founders & Visionaries
+## 👩‍💻 Founders & collaborator
 
-- **Abhaykumar Ambaliya**
-- **Parth Lathiya**
+- [Smatyab](https://github.com/Smatyab)
+- [lathiyaparth](https://github.com/lathiyaparth)
 
 United by their passion for technology, these founders have set out to revolutionize residential living with a mission to make society operations more efficient, transparent, and user-friendly.
 
@@ -116,7 +116,7 @@ United by their passion for technology, these founders have set out to revolutio
 
 ## 🔒 Terms & Privacy
 
-- All data is handled securely and in accordance with our [Privacy Policy](https://lathiyaparth.github.io/policy/).
+- All data is handled securely and in accordance with our [Privacy Policy](https://Smatyab.github.io/policy/).
 - By using Living Link, you agree to abide by the platform's terms and conditions.
 
 ---
