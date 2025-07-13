@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="12"
+    tools:context=".simple.information_activity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+
+    <RelativeLayout
+        android:id="@+id/appConcept"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="What app concept?"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+
+    <RelativeLayout
+        android:id="@+id/meeting_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="How to Use Meeting"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/chating"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/outline_info_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="How to Use Event"
+                android:textSize="@dimen/_20sdp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="How to Payment"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/wallet"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="How to Use Wallet"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/complain_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="How to Create Complain"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/notes_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="How to Use Notes "
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/><RelativeLayout
+    android:id="@+id/customer_info_care"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.8">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/outline_info_24"
+            android:padding="@dimen/_10sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Customer Care ?"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:padding="@dimen/_2sdp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        />
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+    <RelativeLayout
+        android:id="@+id/private_policy_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/outline_info_24"
+                android:padding="@dimen/_10sdp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="private policy"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            android:padding="@dimen/_2sdp"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/primary_color"/>
+
+    <Button
+        android:id="@+id/customere_cate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:backgroundTint="@color/primary_color"
+        android:background="@drawable/buttton_round"
+        android:text="Customer Care" />
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_12sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/transaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date : 00/00/00"
+                android:textSize="@dimen/_25ssp"/>
+            <TextView
+                android:id="@+id/transaction_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Amount:1000"
+                android:textSize="@dimen/_25ssp"/>
+            <TextView
+                android:id="@+id/transaction_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Status : false"
+                android:textSize="@dimen/_25ssp"/>
+            <Button
+                android:id="@+id/transaction_to_pay_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_color"
+                android:text="Fast Pay"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

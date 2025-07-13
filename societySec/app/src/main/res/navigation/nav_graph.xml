@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noteHomeFragment">
+    <fragment
+        android:id="@+id/noteHomeFragment"
+        android:name="com.nothing.secad.note.fragments.NoteHomeFragment"
+        android:label="NoteHomeFragment" >
+        <action
+            android:id="@+id/action_noteHomeFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.nothing.secad.note.model.Note"
+            app:nullable="true"/>
+        <action
+            android:id="@+id/action_noteHomeFragment_to_addNoteFragment"
+            app:destination="@id/addNoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.nothing.secad.note.fragments.EditNoteFragment"
+        android:label="EditNoteFragment" >
+        <action
+            android:id="@+id/action_editNoteFragment_to_noteHomeFragment"
+            app:destination="@id/noteHomeFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.nothing.secad.note.model.Note"
+            app:nullable="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addNoteFragment"
+        android:name="com.nothing.secad.note.fragments.AddNoteFragment"
+        android:label="AddNoteFragment" >
+        <action
+            android:id="@+id/action_addNoteFragment_to_noteHomeFragment"
+            app:destination="@id/noteHomeFragment" />
+    </fragment>
+</navigation>

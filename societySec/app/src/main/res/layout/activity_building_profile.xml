@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white"
+    android:id="@+id/updateUserProfileRoot"
+    tools:context=".Building_profile">
+    <ScrollView
+        android:id="@+id/updateUserProfileScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_20sdp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:backgroundTint="@color/primary_color"
+                    app:cardCornerRadius="@dimen/_100sdp">
+
+                    <ImageButton
+                        android:id="@+id/image_user_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="user image"
+                        android:scaleType="centerCrop"
+                        tools:ignore="HardcodedText"
+                        android:src="@drawable/placeholder_image_failed"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_40sdp">
+
+
+                <TextView
+                    android:id="@+id/profile_socName_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Society Name"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+                <TextView
+                    android:id="@+id/profile_email_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Email Id"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+                <TextView
+                    android:id="@+id/profile_houseNo_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Total House No"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+                <TextView
+                    android:id="@+id/total_maintenance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Maintenance Amount"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+                <TextView
+                    android:id="@+id/per_home_pay_able_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_background"
+                    android:text="Per Home PayAble Amount"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText"/>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/primary_color"
+        app:SpinKit_Style="FadingCircle" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@color/white"
+    android:gravity="center"
+    android:id="@+id/complain_root_ll">
+
+    <LinearLayout
+        android:id="@+id/complain_image_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_20sdp"
+        android:layout_weight="4"
+        android:background="@drawable/btn_outline"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <ImageButton
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/placeholder_image_failed"
+            android:scaleType="fitXY"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/complain_info_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_weight="3.2"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Event Date"
+                    android:textColor="@color/light_white"
+                    android:textStyle="bold|italic"></TextView>
+                <EditText
+                    android:id="@+id/event_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Event Date"
+                    android:inputType="text"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_white"
+                    android:textStyle="bold|italic"
+                    android:text="Exprire Date">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/event_exp_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:clickable="false"
+                    android:longClickable="false"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Event Exp"
+                    android:inputType="text"
+                    android:padding="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/event_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="Event title"
+            android:inputType="text"
+            android:clickable="false"
+            android:longClickable="false"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/event_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start"
+            android:hint="Event  Description"
+            android:inputType="textMultiLine"
+            android:clickable="false"
+            android:longClickable="false"
+            android:lines="7"
+            android:padding="@dimen/_5sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp">
+        <Button
+            android:id="@+id/event_call_Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:text="Call "
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="italic|bold"
+            android:visibility="visible" />
+        <Button
+            android:id="@+id/event_mail_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/primary_color"
+            android:text="mail"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="italic|bold"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/primary_color"
+        app:SpinKit_Style="FadingCircle" />
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo_white"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_white"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.SecAd"
+        tools:targetApi="31">
+        <activity
+            android:name=".simple.webView_info"
+            android:exported="false" />
+        <activity
+            android:name=".simple.information_activity"
+            android:theme="@style/Theme.SecAd.title"
+            android:parentActivityName=".HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".addWallet_animation"
+            android:exported="false" />
+        <activity
+            android:name=".animation_after_sign_up"
+            android:exported="false" />
+        <activity
+            android:name=".simple.animation_after_login"
+            android:exported="false" />
+        <activity
+            android:name=".EventActivity"
+            android:exported="false"
+            android:label="@string/title_activity_event"
+            android:theme="@style/Base.Theme.SecAd" />
+        <activity
+            android:name=".UserTransactionShowActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Building_profile"
+            android:theme="@style/Theme.SecAd.title"
+            android:parentActivityName=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MeetingUserSecBothWayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MoreCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".note.NotesMainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="MyLibraryName" />
+        </activity>
+        <activity
+            android:name=".DebitCard"
+            android:theme="@style/Theme.SecAd.title"
+            android:parentActivityName=".addWallet_animation"
+            android:exported="false" />
+        <activity
+            android:name=".setting.CustomerCare"
+            android:theme="@style/Theme.SecAd.title"
+            android:parentActivityName=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:theme="@style/Theme.SecAd.title"
+            android:parentActivityName=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".complain.ComplainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".model.complainModel"
+            android:exported="false"
+            android:label="@string/title_activity_complain_model" />
+        <activity
+            android:name=".meeting.user.UserMeetingConsforanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".meeting.user.UseMeetingMainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TransactionHistoryAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".simple.PayToAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".simple.FirebaseUpload"
+            android:exported="false" />
+        <activity
+            android:name=".simple.demo"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".UnSuccess"
+            android:exported="false" />
+        <activity
+            android:name=".SuccessActivity"
+            android:exported="false"
+            android:label="@string/title_activity_success" />
+        <activity
+            android:name=".simple.ReceivePaymentUser"
+            android:exported="false" />
+        <activity
+            android:name=".simple.SendPaymentAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".simple.PaymentSendReceiveActivity"
+            android:exported="false" />
+        <activity
+            android:name=".simple.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".simple.DialogBoxBG"
+            android:exported="false" />
+        <activity
+            android:name=".simple.BuildingForm"
+            android:exported="false"
+            android:theme="@style/Theme.SecAd" />
+        <activity
+            android:name=".simple.SignupActivity"
+            android:exported="false"
+            android:parentActivityName=".simple.welcome_signUp_login" />
+        <activity
+            android:name=".simple.welcome_signUp_login"
+            android:exported="false" />
+        <activity
+            android:name=".simple.splash_MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".meeting.ZoomMainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity=""
+    tools:context=".setting.CustomerCare">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <EditText
+            android:id="@+id/edt_issue_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_color"
+            android:textColor="@color/white"
+            android:hint="Enter Your Issue Title"
+            android:padding="@dimen/_10sdp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:gravity="top|start"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edt_issue_desc"
+            android:background="@color/primary_color"
+            android:textColor="@color/white"
+            android:hint="Enter Your Issue..."
+            android:padding="@dimen/_10sdp"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:lines="12"
+            android:gravity="top|start"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_issue_send_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:drawableLeft="@drawable/baseline_mark_email_read_24"
+        android:text="SEND "
+        android:textSize="@dimen/_20sdp"/>
+
+    <Button
+        android:id="@+id/btn_issue_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary_color"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:drawableLeft="@drawable/baseline_call_24"
+        android:text="call "
+        android:textSize="@dimen/_20sdp"/>
+
+
+
+</LinearLayout>
